@@ -1,7 +1,7 @@
 var nav_link = document.querySelector(".nav-links");
     var nav = document.querySelector("nav");
     var menu_btn = document.querySelector(".menu");
-    var width = window.getComputedStyle(document.querySelector(".line"), ":before").getPropertyValue("width");
+    var width = window.getComputedStyle(document.querySelector("nav")).getPropertyValue("width");
     var linne = document.querySelector(".line");
     console.log(width);
     var prevScrollPos = window.pageYOffset;
@@ -12,7 +12,7 @@ var nav_link = document.querySelector(".nav-links");
             menu_btn.style.top = "0";
             
         }else{
-            nav.style.top = "-450px";
+            nav.style.top = "-350px";
             menu_btn.style.top = "-100px";
         }
         prevScrollPos = currentPos;
